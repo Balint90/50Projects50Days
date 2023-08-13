@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+input {
+    width: 5em;
+}
+
 body {
     background-color: #3494e4;
     color: #fff;  
@@ -22,6 +26,23 @@ body {
     margin: 0;
 }
 
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--fill-color);
+    color: #fff;
+    border: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
 h1 {
     margin: 10px 0 0;
 }
@@ -29,6 +50,7 @@ h1 {
 h3 {
     font-weight: 400;
     margin: 10px 0;
+    display: flex;
 }
 
 .cup {
