@@ -38,8 +38,6 @@ function showMovies(movies) {
 
         main.appendChild(movieEl);
     });
-
-    
 }
 
 function getClassByRate(vote) {
@@ -55,7 +53,7 @@ function getClassByRate(vote) {
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    const searchTerm = search.ariaValueMax;
+    const searchTerm = search.value;
 
     if (searchTerm && searchTerm !== '') {
         getMovies(SEACRH_API + searchTerm);
